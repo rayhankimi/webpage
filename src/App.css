@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "SUSE", SansSerif;
+}
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 30rem;
+  margin: 0;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(assets/img.png) center center/cover no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+.section-one{
+  background-color: rgba(196, 69, 54, 0.6);
+}
+.section-two{
+    background-color: rgba(237, 221, 212, 0.6);
+}
+.section-three{
+  background-color: rgba(25, 114, 120, 0.6);
+}
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #283D3B;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: #197278;
+  color: white;
+}
+
+.testimonials-section {
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(75% - 1rem);
+}
+
+.testimonial-card p {
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
