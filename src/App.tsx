@@ -8,12 +8,13 @@ const App: React.FC = () => {
     const section_one = useRef<HTMLDivElement | null>(null);
     const section_two = useRef<HTMLDivElement | null>(null);
     const section_three = useRef<HTMLDivElement | null>(null);
-    const hero_section = useRef<HTMLDivElement | null>(null);
+    // const hero_section = useRef<HTMLDivElement | null>(null);
 
-    const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
+        if (ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth' });
+        }
     };
-
 
     return (
         <div className="app-container">
