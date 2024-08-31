@@ -1,0 +1,19 @@
+.navbar-custom {
+    background-color: rgba(255,255,255,0.85); /* Mengatur warna latar belakang */
+    color: #283D3B; /* Atur warna teks agar kontras dengan background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Opsional: tambahkan bayangan */
+    transition: opacity 0.4s ease; /* Animasi untuk perubahan opasitas */
+}
+
+/* Navbar links hover effect */
+.navbar-custom .nav-item:hover {
+    color: #3b82f6; /* Change color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive adjustments */
+@media (min-width: 960px) {
+    .navbar-custom {
+        padding: 16px 32px; /* Increase padding on larger screens */
+    }
+}
