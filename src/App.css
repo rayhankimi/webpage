@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  min-height: 30rem;
+  min-height: 55rem;
   margin: 0;
   text-align: center;
   padding: 2rem 0;
@@ -24,13 +24,13 @@
 }
 
 .hero-section h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: white;
   margin-bottom: 1rem;
 }
 
 .hero-section p {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: whitesmoke;
   margin-bottom: 2rem;
 }
@@ -49,8 +49,9 @@
 
 .main-content {
   flex: 1;
+  min-height: 60rem;
   width: 100%;
-  padding: 2rem 0;
+  padding: 4rem 0;
   box-sizing: border-box;
 }
 
@@ -59,6 +60,12 @@
 }
 .section-two{
     background-color: rgba(237, 221, 212, 0.6);
+}
+.section-two h1,
+.section-two .section-two-text {
+  color: #000; /* Ubah warna menjadi hitam */
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 .section-three{
   background-color: rgba(25, 114, 120, 0.6);
@@ -89,28 +96,98 @@
   color: white;
 }
 
-.testimonials-section {
-  text-align: center;
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
 }
 
-.testimonials {
+/* Container utama untuk testimonial */
+.testimonials-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem; /* Tambahkan padding ke container */
 }
 
-.testimonial-card {
+/* Kotak besar di sebelah kiri */
+.large-card {
+  flex: 1 1 48%;
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: calc(75% - 1rem);
+  display: flex;
+  flex-direction: column; /* Menyusun gambar dan konten secara vertikal */
+  gap: 1rem; /* Menambahkan jarak antara gambar dan konten */
+  align-items: center; /* Memusatkan gambar dan konten */
 }
 
-.testimonial-card p {
-  margin: 0;
+/* Gambar di dalam card besar */
+.large-card-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px; /* Mengikuti radius card */
+  object-fit: cover; /* Menjaga proporsi gambar dan menutupi seluruh area */
 }
+
+/* Container untuk kotak kecil */
+.small-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 48%;
+}
+
+/* Kotak kecil di sebelah kanan */
+.small-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Menyusun konten secara vertikal */
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    padding: 0 1.5rem; /* Tambahkan padding horizontal untuk mobile */
+  }
+
+  .large-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .small-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .small-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Atur padding lebih besar untuk layar sangat kecil */
+@media (max-width: 480px) {
+  .testimonials-container {
+    padding: 0 2rem; /* Lebih besar pada layar kecil */
+  }
+}
+
+/* Sesuaikan padding pada layar yang lebih besar */
+@media (min-width: 769px) {
+  .testimonials-container {
+    padding: 0 2rem; /* Sedikit lebih kecil pada layar tablet */
+  }
+}
+
 
 footer {
   background-color: #333;
