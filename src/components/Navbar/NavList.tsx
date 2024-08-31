@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Typography } from "@material-tailwind/react";
 
 export function NavList(): JSX.Element {
@@ -9,6 +9,9 @@ export function NavList(): JSX.Element {
                 variant="small"
                 color="blue-gray"
                 className="p-1 font-normal"
+                placeholder="" // Tambahkan placeholder jika diperlukan
+                onPointerEnterCapture={() => {}} // Fungsi kosong sebagai pengganti
+                onPointerLeaveCapture={() => {}} // Fungsi kosong sebagai pengganti
             >
                 <a href="#" className="flex items-center">
                     Home
@@ -19,6 +22,9 @@ export function NavList(): JSX.Element {
                 variant="small"
                 color="blue-gray"
                 className="p-1 font-normal"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
             >
                 <a href="#" className="flex items-center">
                     About
@@ -29,6 +35,9 @@ export function NavList(): JSX.Element {
                 variant="small"
                 color="blue-gray"
                 className="p-1 font-normal"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
             >
                 <a href="#" className="flex items-center">
                     Portfolio
@@ -39,6 +48,9 @@ export function NavList(): JSX.Element {
                 variant="small"
                 color="blue-gray"
                 className="p-1 font-normal"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
             >
                 <a href="#" className="flex items-center">
                     Contacts
